@@ -2,7 +2,7 @@
 
 个人 pi coding agent 配置合集，在实践中迭代打磨，欢迎参考或直接使用。
 
-A collection of personal configuration for the [pi coding agent](https://github.com/earendil-works/pi-coding-agent), refined through daily use. Feel free to use or fork.
+A collection of personal configuration for the [pi coding agent](https://github.com/earendil-works/pi), refined through daily use. Feel free to use or fork.
 
 ## 安装 / Installation
 
