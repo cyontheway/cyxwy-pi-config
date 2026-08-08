@@ -26,7 +26,7 @@ cp -r extensions/subagent ~/.pi/agent/extensions/
 | 文件 File | 功能 Description |
 |-----------|------------------|
 | `permission-gate.ts` | 权限拦截系统：allow/ask/deny 三级 + normal/yolo/plan 模式切换 + 受保护文件绝对拦截。Permission gate: three-level interception, mode switching, protected-file blocking. |
-| `pi-header.ts` | 像素艺术 Pi logo 顶部头部 + 版本/目录/模型/会话名信息栏（v2 紫色系，配 dark-purple 主题）。Pixel-art Pi logo header with version/dir/model/session info bar. |
+| `pi-header.ts` | 像素艺术 Pi logo 顶部头部 + 版本/目录/模型/会话名信息栏（v2 绿色系，配 dark-purple 主题）。Pixel-art Pi logo header with version/dir/model/session info bar. |
 | `status-footer.ts` | Catppuccin Mocha 风格底部状态栏：模型、目录、分支、时间、token、上下文、权限模式。Catppuccin-styled status footer. |
 | `api-speed.ts` | 实时显示 LLM API 速度（流式 3s 滑动窗口估算 tok/s，请求结束显示平均速度 + 耗时）。Live API speed monitor. |
 | `obsidian-auto-open.ts` | edit/write 后自动在 Obsidian 中打开 `.md` 文件（自动探测 vault）。Auto-open edited files in Obsidian. |
