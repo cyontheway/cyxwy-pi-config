@@ -1,4 +1,4 @@
-# cyxwy-pi-config
+# cyontheway-pi-config
 
 个人 pi coding agent 配置合集，根据个人需求更新，欢迎参考或直接使用。
 
