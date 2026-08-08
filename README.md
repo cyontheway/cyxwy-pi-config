@@ -42,6 +42,18 @@ cp -r extensions/subagent ~/.pi/agent/extensions/
 | `tools.ts` | `/tools` 命令交互式开关工具。Interactive tool toggling. |
 | `sound.ts` | 会话结束时播放系统提示音。System sound on session end. |
 
+## 主题 / Themes
+
+| 文件 File | 说明 Description |
+|-----------|------------------|
+| `themes/dark-purple.json` | 深紫主题：用户消息底 `#535394`、工具状态三色、紫色调强调色。Dark purple theme with purple-tinted accents. |
+
+```bash
+# 安装主题
+cp themes/dark-purple.json ~/.pi/agent/themes/
+# 在 pi 设置中切换为 dark-purple
+```
+
 ## 依赖 / Dependencies
 
 扩展使用 pi 官方 SDK 类型，请确保 pi 版本兼容：
