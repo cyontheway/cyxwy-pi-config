@@ -1,5 +1,5 @@
 /**
- * Pi Header — MAUVE 紫罗兰像素 logo + 顶部信息栏（v2 紫色系，配 dark-purple 主题）
+ * Pi Header — 绿色像素 logo + 顶部信息栏（v2 绿色系，配 dark-purple 主题）
  *
  * 用 ctx.ui.setHeader() 替换内置头部，显示：
  * - 绿色像素字体 "Pi"
@@ -78,9 +78,8 @@ class PiHeaderComponent {
     const g = this.greenTint;
 
     const info: string[] = [`${g("pi")}  ${g("v" + VERSION)}`];
-    // 目录行（~/ 绝对路径）→ 空一行 → 模型名
+    // 目录行（~/ 绝对路径）→ 模型名（无空行）
     info.push(`${g(this.dir)}`);
-    info.push("");
     if (this.modelLabel) info.push(`${g(this.modelLabel)}`);
     if (this.sessionName) info.push(`${p(this.sessionName)}`);
 
