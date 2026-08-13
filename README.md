@@ -13,6 +13,8 @@ Copy the `.ts` files you need to `~/.pi/agent/extensions/` (or your project's `.
 cp extensions/status-footer.ts ~/.pi/agent/extensions/
 # Install subagent (includes subdirectory)
 cp -r extensions/subagent ~/.pi/agent/extensions/
+# Install a skill (optional)
+cp -r skills/cross-session-msg ~/.pi/agent/skills/
 ```
 
 > ⚠️ Extension loading is fail-fast in pi. A syntax error in any extension will prevent all extensions from loading. A full restart is recommended after changes (`/reload` has been unreliable in practice).
@@ -37,6 +39,13 @@ cp -r extensions/subagent ~/.pi/agent/extensions/
 | `stash.ts` | `Ctrl+S` stash / restore editor content (like Claude Code's Ctrl+S draft stash). |
 | `tools.ts` | `/tools` command for interactive tool toggling. |
 | `sound.ts` | System sound on session end. |
+| `session-msg.ts` | `/msg <session-short-id|name> <message>`: send a message to another session via a spawned `pi` process, result rendered as a bubble (with Tab completion for sessions). |
+
+## Skills
+
+| Skill | Description |
+|-------|-------------|
+| `cross-session-msg` | Cross-session messaging for AI: ask follow-up questions to an old session, hand over tasks, or append notes via `pi --session <id> -p "<message>"`. Companion to the `/msg` extension. |
 
 ## Themes
 

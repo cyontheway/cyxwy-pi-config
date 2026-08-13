@@ -13,6 +13,8 @@
 cp extensions/status-footer.ts ~/.pi/agent/extensions/
 # 示例：安装 subagent（含子目录）
 cp -r extensions/subagent ~/.pi/agent/extensions/
+# 示例：安装 skill（可选）
+cp -r skills/cross-session-msg ~/.pi/agent/skills/
 ```
 
 > ⚠️ pi 的扩展加载是 fail-fast：任何一个扩展语法错误会导致全部扩展不加载。改动后建议完全重启 pi（`/reload` 实测多次不生效）。
@@ -37,6 +39,13 @@ cp -r extensions/subagent ~/.pi/agent/extensions/
 | `stash.ts` | `Ctrl+S` 暂存/恢复输入框内容（类似 Claude Code 的 Ctrl+S 存草稿）。 |
 | `tools.ts` | `/tools` 命令交互式开关工具。 |
 | `sound.ts` | 会话结束时播放系统提示音。 |
+| `session-msg.ts` | `/msg <session短id或名字> <消息>`：spawn 独立 pi 进程跨 session 发消息，结果气泡渲染（Tab 补全 session 列表）。 |
+
+## Skills
+
+| Skill | 说明 |
+|-------|------|
+| `cross-session-msg` | 跨 session 发消息 skill：补问旧上下文、会话交接、事后补记（`pi --session <id> -p "<消息>"`）。与 `/msg` extension 配套（skill=AI 主动调用，/msg=用户手动）。 |
 
 ## 主题
 
